@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #edf1f7;
+  font-family: "Mukta", sans-serif;
+}
+
+#background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+#background::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%);
+}
+#background video {
+  height: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#app header {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 64px;
+       column-gap: 64px;
+  width: 100%;
+  max-width: 1440px;
+  padding-top: 24px;
+}
+#app header img {
+  width: 70px;
+  height: auto;
+}
+#app header .navigation {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+  list-style: none;
+}
+#app header .navigation li .navigation_link {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  transition: 0.4s;
+}
+#app header .navigation li .navigation_link:hover {
+  color: red;
+}
+#app header .navigation_social {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+#app header .navigation_social svg {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+#app header .navigation_social svg:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+}
+#app main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+}
+#app main .main_info {
+  width: 100%;
+  max-width: 570px;
+}
+#app main .main_info .img_logo {
+  width: 250px;
+}
+#app main .main_info p {
+  font-size: 18px;
+  margin: 20px 0 28px;
+}
+#app main .main_info div {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+#app main .main_info div a {
+  background-color: #c51212;
+  text-decoration: none;
+}
+#app main .main_info div button {
+  background-color: transparent;
+  border: 1px solid #12b02d;
+}
+#app main .main_info div a, #app main .main_info div button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  transform: skew(-10deg);
+}
+#app main .img_personagens {
+  width: 680px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
