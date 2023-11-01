@@ -140,6 +140,9 @@
     inset: 0;
     z-index: -1;
   }
+  #app {
+    height: 0;
+  }
   #app header {
     display: flex;
     justify-content: space-between;
