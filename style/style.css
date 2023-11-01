@@ -22,7 +22,7 @@
   background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%);
 }
 #background video {
-  height: 100%;
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -134,5 +134,101 @@
   width: 680px;
 }
 
+@media screen and (max-width: 500px) {
+  #app header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+  }
+  #app header .navigation, #app header .navigation_social {
+    display: none;
+  }
+  #app header img {
+    width: 55px;
+  }
+  #app header .material-symbols-outlined {
+    font-size: 45px;
+  }
+  #app main {
+    display: flex;
+    justify-content: center;
+  }
+  #app main .main_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 350px;
+    height: 100%;
+    max-height: 650px;
+  }
+  #app main .main_info .img_logo {
+    width: 200px;
+  }
+  #app main .main_info p {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  #app main .main_info div a, #app main .main_info div button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 150px;
+    font-size: small;
+  }
+  #app main .img_personagens {
+    display: none;
+  }
+}
+@media screen and (max-width: 900px) {
+  #app header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #app header .navigation_social {
+    display: none;
+  }
+  #app header img {
+    width: 55px;
+  }
+  #app header .material-symbols-outlined {
+    display: none;
+  }
+  #app main {
+    display: flex;
+    justify-content: center;
+  }
+  #app main .main_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    max-height: 800px;
+  }
+  #app main .main_info p {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #app main .main_info div {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+  #app main .main_info div a, #app main .main_info div button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 200px;
+    font-size: small;
+  }
+  #app main .img_personagens {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
