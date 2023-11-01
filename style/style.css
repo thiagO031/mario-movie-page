@@ -135,19 +135,20 @@
 }
 
 @media screen and (max-width: 500px) {
+  body {
+    height: 120vh;
+  }
   #background {
     position: fixed;
     inset: 0;
     z-index: -1;
-  }
-  #app {
-    height: 0;
   }
   #app header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 350px;
+    border: 1px solid blue;
   }
   #app header .navigation, #app header .navigation_social {
     display: none;
@@ -170,6 +171,7 @@
     max-width: 350px;
     height: 100%;
     max-height: 650px;
+    border: 1px solid blue;
   }
   #app main .main_info .img_logo {
     width: 200px;
